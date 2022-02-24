@@ -95,39 +95,6 @@ body{
     color:#000;
     font-family: 'Archivo', sans-serif;
 }
-/* CSS for Slider */
-#slider{
-    width:100%;
-    height:600px;
-    /*display:flex;*/
-    position:relative;
-}
-.slider-item{
-    width:100%;
-    height:100%;
-}
-.slider-item img{
-    width: 100%;
-    height: 100%;
-}
-span .fa-chevron-left{
-    position:absolute;
-    width:30px;
-    height:30px;
-    top:calc(300px - 15px);
-    left:10px;
-    color:white;
-    font-size: 30px;
-}
-span .fa-chevron-right{
-    position:absolute;
-    width:30px;
-    height:30px;
-    top:calc(300px - 15px);
-    right:10px;
-    color:white;
-    font-size: 30px;
-}
 /*CSS for intro*/
 #intro{
     display:flex;
@@ -169,30 +136,30 @@ span .fa-chevron-right{
     margin-top: 20px;
     line-height: 22.5px;
 }
-/*CSS for Dang ki*/
+/*CSS for dk*/
 #dk{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 30px;
     line-height: 27px;
     text-decoration: none solide rgb(0, 0 ,0);
     color:#000;
     height:942.963px;
     width: 1519px;
     padding:48px 0 48px 0;
-    background-color: rgb(0, 13, 117);
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #000D75 0%, #65379A 100%);
     display: block;
     position: relative;
 }
 .khung-dki{
-    font-size: 15px;
+    font-size: 30px;
     line-height: 27px;
     text-decoration: none solid rgb(0, 0 ,0);
     color: #000;
-    height:846.963px;
-    width:1200px;
-    padding:10px 10px 10px 10px;
-    left:172px;
-    right:-172px;
+    height:500px;
+    width:1000px;
+    left:150px;
+    right:-150px;
     min-width: auto;
     min-height:auto; 
     display:flex;
@@ -200,8 +167,8 @@ span .fa-chevron-right{
 }
 .khung-dki .dki{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 27px;
+    font-size: 50px;
+    line-height: 50px;
     text-decoration: none solid rgb(0, 0, 0);
     height:671.562px;
     width:500.325px;
@@ -211,7 +178,7 @@ span .fa-chevron-right{
 }
 .khung-dki .dki h2{
     font-family:Arial, sans-serif;
-    font-size: 27px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 37.8px;
     text-decoration:none solid rgb(255, 255, 255) ;
@@ -219,6 +186,7 @@ span .fa-chevron-right{
     color:#FFFFFF;
     height:37.8px;
     width:500.325px;
+    border: 2px solid rgb(0, 13, 117);
     display:block;
     text-shadow: rgba(0, 0, 0, 0) 0px 0px 10px;
 }
@@ -232,10 +200,9 @@ span .fa-chevron-right{
     color:#F5EC10;
     height:40px;
     width:449.188px;
-    bottom:29px;
     border:2px solid #F5EC10;
-    padding:10px 25px 10px 25px;
     display:inline-block;
+    margin-top: 29px;
 }
 .khung-dki .dki .box h3{
     font-family: Arial, sans-serif;
@@ -248,36 +215,69 @@ span .fa-chevron-right{
     justify-content: center;
     display:block;
 }
-.khung-dki .dki .form{
-    font-size: 15px;
-    line-height: 27px;
-    text-decoration: none solid rgb(0, 0, 0);
-    height: 465.6px;
-    width: 500.325px;
-    min-height:auto;
-    min-width:auto;
-    position:relative;
-    display:block;
+.form-select{
+    margin-top:35px;
 }
-.khung-dki .dki .form .dki-form{
-    font-size: 15px;
-    font-variant: none;
-    line-height: 27px;
-    text-decoration: none solid rgb(0, 0, 0);
-    height: 450.6px;
-    width: 460.325px;
-    display:block;
+.note{
+    font-size: 16px;
+    margin-top: 29px;
 }
-.khung-dki .dki .form .dki-form input{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 20.8px;
-    text-decoration: none solid rgb(0, 0, 0);
+.khung-dki .dk-item img{
     vertical-align: middle;
-    height: 25px;
-    width: 460.325px;
-    border: 1px solid #777771;
-    padding:9px 9px 9px 9px;
-    display:block;
-    cursor:text;
+    height: 650px;
+    width:600px;
+    max-width: 100%;
+    display: inline-block;
+    margin-left: 200px;
+}
+#dk .details{
+    width: 1180px;
+    height: 156px;
+    margin-left: 15%;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dk .details-table{
+    position: relative;
+    height: 156px;
+    width: 295px;
+    float: left;
+    margin-top: 250px;
+}
+
+.details-table .symbol{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    color: #FFF;
+    font-size: 40px;
+}
+
+.details-table .super-text{
+    position: absolute;
+    top: 36px;
+    left: 50px;
+    color: #EDB017;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.details-table .normal-text{
+    position: absolute;
+    top: 45px;
+    left: 165px;
+    color: #EDB017;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.details-table .sub-text{
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
 }
