@@ -1,0 +1,252 @@
+/* CSS for All */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CSS for Header */
+#header{
+    width: 100%;
+    height: 90px;
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px -2px gray;
+    position:relative;
+    z-index: 2;
+}
+#header .header-inner{
+    width:80%;
+    height:100%;
+    display:flex;
+}
+#header .header-inner .logo{
+    width:25%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#header .header-inner .nav{
+    width:75%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.main-menu{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    font-family: 'Archivo', sans-serif;
+}
+.main-menu>li{
+    width:fit-content;
+    margin-right: 15px;
+    padding:5px;
+    position:relative;
+}
+.main-menu>li>a{
+    text-decoration: none;
+    color:#020516;
+    font-weight: 600;
+}
+.main-menu>li>a.active{
+    color:#0b249e;
+}
+.sub-menu{
+    display:none;
+}
+.main-menu>li:hover .sub-menu{
+    display:block;
+    position: absolute;
+    top:25px;
+    left:0;
+    background-color: #F4F4F4;
+    padding:10px;
+    width:max-content;
+}
+.main-menu>li:hover .sub-menu li{
+    padding:5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.main-menu>li:hover .sub-menu li a{
+    text-decoration: none;
+    color:#000;
+    font-family: 'Archivo', sans-serif;
+}
+.sub-sub-menu{
+    display:none;
+}
+.sub-menu>li:hover .sub-sub-menu{
+    display:block;
+    position:absolute;
+    top: 74.1px;
+    left: 240px;
+}
+.sub-menu>li:hover .sub-sub-menu li{
+    padding:10px 0 10px 0;
+    background-color: #F4F4F4;
+    width:220px;
+    min-width: 220px;
+}
+.sub-menu>li:hover .sub-sub-menu li a{
+    text-decoration: none;
+    color:#000;
+    font-family: 'Archivo', sans-serif;
+}
+/* CSS for Slider */
+#slider{
+    width:100%;
+    height:600px;
+    /*display:flex;*/
+    position:relative;
+}
+.slider-item{
+    width:100%;
+    height:100%;
+}
+.slider-item img{
+    width: 100%;
+    height: 100%;
+}
+span .fa-chevron-left{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:calc(300px - 15px);
+    left:10px;
+    color:white;
+    font-size: 30px;
+}
+span .fa-chevron-right{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:calc(300px - 15px);
+    right:10px;
+    color:white;
+    font-size: 30px;
+}
+/*CSS for intro*/
+#intro{
+    display:flex;
+    justify-content: center;
+    padding:60px 0;
+}
+.intro-inner{
+    width:80%;
+}
+.intro-inner h3{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.intro-inner h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.intro-content{
+    display:flex;
+    justify-content: space-around;
+}
+.intro-content .intro-item{
+     width:28%;
+     padding:18px;
+     border:1px solid #E1E0E0;
+}
+.intro-content .intro-item img{
+    width:100%;
+    height:230px;
+}
+.intro-content .intro-item p{
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 22.5px;
+}
+/*CSS for Dang ki*/
+#dk{
+    justify-content: center;
+    padding:46px 23px 46px 23px;
+    background-color: rgb(0, 13, 117);
+}
+.dki{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    text-decoration: none solid rgb(0, 0, 0);
+    height:689.7px;
+    width:350.038px;
+    min-height:auto;
+    min-width:auto;
+    position:relative;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+.dki h2{
+    font-family:Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30.8px;
+    text-decoration:none solid rgb(255, 255, 255) ;
+    text-align: center;
+    color:#FFFFFF;
+    height:61.6px;
+    width:360px;
+    display:block;
+    box-sizing: border-box;
+    text-shadow: rgba(0, 0, 0, 0) 0px 0px 10px;
+}
+.dki .box{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 19.5;
+    text-decoration: none solid rgb(245, 236, 16);
+    text-align: center;
+    color:#F5EC10;
+    height:20px;
+    width:200px;
+    border:2px solid #F5EC10;
+    padding:7px 18px 7px 18px;
+    display:inline-block;
+}
+.dki .box h3{
+    font-family: Arial, sans-serif;
+    font-size:15px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-decoration: none solid rgb(245, 236, 16);
+    text-align: center;
+    text-transform: uppercase;
+    color:#F5EC10;
+    height:100%;
+    width:197.587px;
+    min-height:auto;
+    min-width: auto;
+    display:block
+}
+.dk-item{
+    font-size: 15px;
+    line-height: 27px;
+    height:689.7px;
+    width:329.025px;
+    min-height: 1px;
+    min-width: auto;
+    display:flex;
+    position:relative;
+}
+.dk-item .dki-item img{
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    height:365.513px;
+    width:329.025px;
+    max-width:100%;
+    display:flex;
+}
