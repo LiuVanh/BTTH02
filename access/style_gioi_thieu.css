@@ -1,0 +1,22 @@
+.primary-content { grid-area: pc; }
+.aside { grid-area: side-bar; }
+.partner { grid-area: parter; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'pc pc pc pc side-bar side-bar'
+        'parter parter parter parter parter parter'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px; 
+  border: 1px solid black;
+}
