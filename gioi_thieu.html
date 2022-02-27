@@ -1,89 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aptech-Giới thiệu</title>
-    <link rel="stylesheet" href="./access/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./access/reset.css">
+    <link rel="stylesheet" href="./access/header.css">
+    <link rel="stylesheet" href="./access/style_gioi_thieu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <!-- start header/navbar-->
-    <header>
-        <div class="header-inner">
-            <div class="logo">
-                <img src="./access/images/aptech-logo.png" alt="ảnh logo">
-            </div>
-            <div class="nav">
-                <ul class="main-menu">
-                    <li>
-                        <a href="#" class="active">Trang chủ</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Hanoi-aptech
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul>
-                            <li><a href="#">giới thiệu</a></li>
-                            <li><a href="#">cơ sở vật chất</a></li>
-                            <li><a href="#">giảng viên</a></li>
-                            <li><a href="#">hỏi đáp</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Chương trình đào tạo
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul>
-                            <li><a href="#">Lập trình quốc tế</a></li>
-                            <li><a href="#">Lập trình web</a></li>
-                            <li>
-                                <a href="#">
-                                    Khóa ngắn hạn
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </a>
-                                <ul>
-                                    <li><a href="#">Khóa quản trị mạng</a></li>
-                                    <li><a href="#">Lập trình JAVA</a></li>
-                                    <li><a href="#">Lập trình .NET</a></li>
-                                    <li><a href="#">Lập trình C#</a></li>
-                                    <li><a href="#">Lập trình PHP</a></li>
-                                    <li><a href="#">Lập trình CSDL với SQL</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Liên thông</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Tin tức
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul>
-                            <li><a href="#">Tin về CNTT</a></li>
-                            <li><a href="#">Lịch thi</a></li>
-                            <li><a href="#">Lịch tuyển sinh</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Tuyển dụng
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul>
-                            <li><a href="#">Tin tuyển dụng</a></li>
-                            <li><a href="#">Góc nghề nghiệp</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <!--Start: wrapper-->
+    <div id="wrapper">
+        <!--Start: Header-->
+        <div id="header" style="box-shadow: none">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="access/images/aptech-logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#">TRANG CHỦ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">HANOI-APTECH <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Cơ sở vật chất</a></li>
+                                <li><a href="#">Giảng viên</a></li>
+                                <li class="last-item-ol"><a href="#">Hỏi đáp</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">CHƯƠNG TRÌNH ĐÀO TẠO <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Lập Trình Viên Quốc Tế ADSE</a></li>
+                                <li><a href="#">Lập Trình Web FullStack</a></li>
+                                <li class="last-item-ol"><a href="#">Các khóa ngắn hạn <i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub-sub-menu">
+                                        <li><a href="#">Khóa Quản Trị Mạng</a></li>
+                                        <li><a href="#">Lập trình Java</a></li>
+                                        <li><a href="#">Lập trình .NET</a></li>
+                                        <li><a href="#">Lập trình C#</a></li>
+                                        <li><a href="#">Lập trình PHP</a></li>
+                                        <li class="last-item-ol"><a href="#">Lập trình CSDL với SQL</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">LIÊN THÔNG</a>
+                        </li>
+                        <li>
+                            <a href="#">TIN TỨC <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Tin về CNTT</a></li>
+                                <li><a href="#">Lịch thi</a></li>
+                                <li class="last-item-ol"><a href="#">Lịch tuyển sinh</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">TUYỂN DỤNG <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Tin tuyển dụng</a></li>
+                                <li class="last-item-ol"><a href="#">Góc nghề nghiệp</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!--end header/navbar-->
-    </header>
+    </div>
+    <!--End wrapper/header-->
+    <div class="grid-container">
+        <div class="primary content">
+            <div class="time">
+                <i class="fa-solid fa-clock"> 25/2/2022</i>
+                <i class="fa-solid fa-folder"> Ha-Noi aptech</i>
+            </div>
+            <div class="react">
+                <span class="like"></span>
+                <span class="share"></span>
+            </div>
+            <div class="content">
+                <h1>HANOI APTECH - TRƯỜNG ĐÀO TẠO LẬP TRÌNH VIÊN QUỐC TẾ</h1>
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="aside">side-bar</div>
+        <div class="partner">partner</div>
+        <div class="footer">footer</div>
+    </div>
 </body>
+
 </html>
